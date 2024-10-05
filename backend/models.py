@@ -16,8 +16,9 @@ class Recipe(BaseModel):
     id: str
     name: str
     ingredients: dict
+    category: list[str]
 
-class Ingredient(BaseModel): 
+class Ingredient(BaseModel):
     id: str
     name: str
     category: list[str]
