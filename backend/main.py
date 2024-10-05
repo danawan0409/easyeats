@@ -1,18 +1,16 @@
 from typing import Union
-from backend.routers import users, recipes, restaurants
+from backend.routers import users, recipes, restaurants, map, ingredients
 from fastapi import FastAPI
 
 app = FastAPI()
 
-app.include_router(users.router, prefix="/api")
-app.include_router(recipes.router, prefix="/api")
-app.include_router(restaurants.router, prefix="/api")
+app.include_router(users.router, prefix="/users", tags=["Users"])
+app.include_router(recipes.router, prefix="/recipes", tags=["Recipes"])
+app.include_router(restaurants.router, prefix="/restaurants", tags=["Restaurants"])
+app.include_router(map.router, prefix="/map", tags=["Map"])
+app.include_router(ingredients.router, prefix="/ingredients", tags=["Ingredients"])
 
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
 
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}

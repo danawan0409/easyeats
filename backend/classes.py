@@ -1,12 +1,23 @@
 from pydantic import BaseModel
 
 class User(BaseModel):
-    id: int
     name: str
-    email: str
+    userId: str
+    restrictions: dict
+    password: str
+    username: str
 
 class Restaurant(BaseModel):
-    pass
+    id: str
+    name: str
+    location: str
 
 class Recipe(BaseModel):
-    pass
+    id: str
+    name: str
+    ingredients: dict
+
+class Ingredient(BaseModel): 
+    id: str
+    name: str
+    category: list[str]

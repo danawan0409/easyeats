@@ -1,6 +1,6 @@
 # easyeats
 Hack the Valley 2024
 
-Backend setup: 
-cd backend
-.venv/Scripts/activate
+# Backend setup: 
+
+uvicorn backend.main:app --reload
