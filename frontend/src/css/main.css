@@ -1,0 +1,49 @@
+@import "styles.css";
+
+body {
+    margin: 10px auto;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+header {
+    margin: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#header-div {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login {
+    font-family: "Afacad Flux", sans-serif;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    border: solid 2px var(--secondary-color);
+    background-color: white;
+    border-radius: 50px;
+}
+
+#login:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}

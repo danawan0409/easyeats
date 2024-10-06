@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>EasyEats: Questionnaire</title>
+        <link href="css/questionnaire.css" rel="stylesheet" type="text/css" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <script src="questionnaire.js" defer></script>
+    </head>
+    <body>
+        <div id="header-div">
+            <header>EasyEats</header>
+            <button id="login">Login</button>
+        </div>
+        <form id="name-form" class="question-div" style="display: block;">
+            <h1 class="question text-question">What is your name?</h1>
+            <input
+                type="text"
+                id="name"
+                class="text-input input"
+                placeholder="Your name"
+                required
+            />
+            <div class="submit-div">
+                <input type="submit" class="submit submit-next" value="Next">
+                <p class="arrow">&#8594;</p>
+            </div>
+        </form>
+        <form id="household-people-form" class="question-div">
+            <h1 class="question text-question">How many people are in your household?</h1>
+            <input
+                type="number"
+                id="household-people"
+                class="text-input input"
+                placeholder="# of people"
+                required
+            />
+            <div class="submit-div">
+                <input type="submit" class="submit submit-next" value="Next">
+                <p class="arrow">&#8594;</p>
+            </div>
+        </form>
+        <form 
+            id="budget-form"
+            class="question-div"
+            action="/submit"
+            method="post">
+            <h2 class="question text-question">Do you have any dietary preferences?</h2>
+            <h3>Select all that apply.</h3>
+            <div class="input mc-input radio">
+                <input type="radio" id="dp-option1" name="budget" value="under50">
+                <label for="dp-option1">Under $50</label><br>
+            </div>
+            <div class="input mc-input radio">
+                <input type="radio" id="dp-option2" name="budget" value="under100">
+                <label for="dp-option2">Under $100</label><br>
+            </div>
+            <div class="input mc-input radio">
+                <input type="radio" id="dp-option3" name="budget" value="under200">
+                <label for="dp-option3">Under $200</label><br>
+            </div>
+            <div class="input mc-input radio">
+                <input type="radio" id="dp-option4" name="budget" value="under300">
+                <label for="dp-option4">Under $300</label><br>
+            </div>
+            <div class="input mc-input radio">
+                <input type="radio" id="dp-option5" name="budget" value="300plus">
+                <label for="dp-option5">$300+</label><br>
+            </div>
+            <br>
+            <div class="submit-div">
+                <input type="submit" class="submit submit-next" value="Next">
+                <p class="arrow">&#8594;</p>
+            </div>
+        </form>
+        <form 
+            id="dietary-preferences-form"
+            class="question-div"
+            action="/submit"
+            method="post">
+            <h2 class="question text-question">Do you have any dietary preferences?</h2>
+            <h3>Select all that apply.</h3>
+            <div class="input mc-input check">
+                <input type="checkbox" id="dp-option1" name="dietary-preferences" value="vegan">
+                <label for="dp-option1">Vegan</label><br>
+            </div>
+            <div class="input mc-input check">
+                <input type="checkbox" id="dp-option2" name="dietary-preferences" value="vegetarian">
+                <label for="dp-option2">Vegetarian</label><br>
+            </div>
+            <div class="input mc-input check">
+                <input type="checkbox" id="dp-option3" name="dietary-preferences" value="halal">
+                <label for="dp-option3">Halal</label><br>
+            </div>
+            <div class="input mc-input check">
+                <input type="checkbox" id="dp-option4" name="dietary-preferences" value="kosher">
+                <label for="dp-option4">Kosher</label><br>
+            </div>
+            <br>
+            <div class="submit-div">
+                <input type="submit" class="submit submit-next" value="Next">
+                <p class="arrow">&#8594;</p>
+            </div>
+        </form>
+        <form 
+            id="allergies-form"
+            class="question-div"
+            action="/submit"
+            method="post">
+            <h2 class="question text-question">Do you have any dietary restrictions?</h2>
+            <div class="input mc-input check">
+                <input type="checkbox" id="allergy-option1" name="allergy-preferences" value="soy">
+                <label for="allergy-option1">Soy allergy</label><br>
+            </div>
+            <div class="input mc-input check">
+                <input type="checkbox" id="allergy-option1" name="allergy-preferences" value="peanut">
+                <label for="allergy-option2">Peanut allergy</label><br>
+            </div>
+            <div class="input mc-input check">
+                <input type="checkbox" id="allergy-option1" name="allergy-preferences" value="lactose">
+                <label for="allergy-option3">Lactose-intolerant</label><br>
+            </div>
+            <div class="input mc-input check">
+                <input type="checkbox" id="allergy-option1" name="allergy-preferences" value="gluten">
+                <label for="allergy-option4">Gluten-free</label><br>
+            </div>
+            <br>
+            <div class="submit-div">
+                <input type="submit" class="submit submit-next" value="Next">
+                <p class="arrow">&#8594;</p>
+            </div>
+        </form>
+        <form 
+            id="reserve-form"
+            class="question-div"
+            action="/submit"
+            method="post">
+            <h2 class="question text-question">Do you live on a reserve?</h2>
+            <div class="input mc-input radio">
+                <input type="radio" id="reserve-option1" name="reserve" value="reserve">
+                <label for="reserve-option1">Yes, I live on a reserve.</label><br>
+            </div>
+            <div class="input mc-input radio">
+                <input type="radio" id="reserve-option2" name="reserve" value="not-reserve">
+                <label for="reserve-option2">No, I do not live on a reserve.</label><br>
+            </div>
+            <br>
+            <div class="submit-div">
+                <input type="submit" class="submit submit-next" value="Next">
+                <p class="arrow">&#8594;</p>
+            </div>
+        </form>
+    </body>
+</html>

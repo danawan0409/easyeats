@@ -1,17 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the h3 element inside #intro-banner
+    const heading = document.querySelector('#intro-banner h3');
+    
+    // Add click event listener
+    heading.addEventListener('click', function() {
+        // Navigate to the question.html page
+        window.location.href = 'questionnare.html';
+    });
+});

@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-icon {
+    width: 85px;   
+    height: 80px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+  }
+  
+  
+  .greeting h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .greeting p {
+    font-size: 1em;
+  }
+  
+  .highlight {
+    color: #f8d23a;
+  }
+  

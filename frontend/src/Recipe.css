@@ -1,0 +1,66 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f6f6;
+}
+
+/* Styling for the overall App */
+.Recipe {
+  padding: 20px;
+}
+
+/* Recipe list grid layout */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   
+  margin-top: 20px;
+}
+
+/* Recipe card styles */
+.recipe-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.recipe-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.home-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;  
+}
+
+.home-button {
+  background-color: #f8d23a; /* Yellow button */
+  border: none;
+  border-radius: 50%; /* Round button */
+  padding: 20px; /* Decrease padding to make the button smaller */
+  font-size: 2.5em; /* Decrease font size for a smaller icon */
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.home-button:hover {
+  background-color: #e6c126; /* Slightly darker yellow when hovered */
+}
