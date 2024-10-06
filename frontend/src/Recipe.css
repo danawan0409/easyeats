@@ -19,7 +19,15 @@ body {
 .recipe-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);   
+  gap: 20px; /* Add some space between the cards */
   margin-top: 20px;
+}
+
+.meal-image {
+  width: 100%;  /* Make the image take the full width of the card */
+  height: 150px; /* Adjust the height for the image */
+  border-radius: 10px 10px 0 0; /* Rounded corners only on the top */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
 }
 
 /* Recipe card styles */
@@ -29,32 +37,48 @@ body {
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack image on top */
+  align-items: center; /* Center content horizontally */
 }
 
 .recipe-card img {
   width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+  height: 150px; /* Adjust height for consistency */
+  border-radius: 10px 10px 0 0; /* Rounded corners on the top */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
 }
 
 .recipe-info {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 10px;
 }
 
+.recipe-card h2, .recipe-card h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.recipe-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Home button container and styles */
 .home-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;  
+  margin-top: 50px;
 }
 
 .home-button {
   background-color: #f8d23a; /* Yellow button */
   border: none;
   border-radius: 50%; /* Round button */
-  padding: 20px; /* Decrease padding to make the button smaller */
-  font-size: 2.5em; /* Decrease font size for a smaller icon */
+  padding: 20px;
+  font-size: 2.5em; /* Icon size */
   color: white;
   cursor: pointer;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */

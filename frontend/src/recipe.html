@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recipe.css">
+  <title>Recipe Page</title>
+</head>
+<body>
+  <div class="Recipe">
+    <!-- Header -->
+    <header>
+      <h1>Welcome to the Recipe App</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for recipe">
+        <button>🔍</button>
+      </div>
+      <ul>
+        <li class="active">Popular</li>
+        <li>Price</li>
+        <li>Ethnic Dishes</li>
+        <li>Quick Recipes</li>
+        <li>Low Calories</li>
+      </ul>
+    </nav>
+
+    <!-- Recipe List -->
+    <div class="recipe-list">
+      <div class="recipe-card">
+        <img src="images/meal.jpg" alt="Chicken Bowl" class="meal-image">
+        <h2>Chicken Bowl</h2>
+        <p>Category: Healthy</p>
+        <div class="recipe-info">
+          <span>⏱ 16 min</span>
+          <span>⭐ 4.8</span>
+        </div>
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/meal2.jpg" alt="Tofu and Noodles" class="meal-image">
+        <h2>Tofu and Noodles</h2>
+        <p>Category: Asian</p>
+        <div class="recipe-info">
+          <span>⏱ 35 min</span>
+          <span>⭐ 4.5</span>
+        </div>
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/meal3.jpg" alt="Lentil Curry and Rice" class="meal-image">
+        <h2>Lentil Curry and Rice</h2>
+        <p>Category: Indian</p>
+        <div class="recipe-info">
+          <span>⏱ 25 min</span>
+          <span>⭐ 4.7</span>
+        </div>
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/meal4.jpg" alt="Quesadilla" class="meal-image">
+        <h2>Quesadilla</h2>
+        <p>Category: Mexican</p>
+        <div class="recipe-info">
+          <span>⏱ 20 min</span>
+          <span>⭐ 4.6</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Button -->
+    <div class="home-button-container">
+      <button class="home-button">&#8962;</button> <!-- Unicode for home icon -->
+    </div>
+  </div>
+</body>
+</html>
