@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from backend import models
+from backend.db import db
 
 router = APIRouter()
 

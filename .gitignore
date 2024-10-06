@@ -54,3 +54,4 @@ dist/
 
 # React specific
 *.eslintcache
+backend/serviceAccountKey.json

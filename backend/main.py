@@ -1,6 +1,7 @@
 from typing import Union
 from backend.routers import users, recipes, restaurants, map, ingredients
 from fastapi import FastAPI
+from backend.db import db
 
 app = FastAPI()
 

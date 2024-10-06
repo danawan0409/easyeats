@@ -1,11 +1,20 @@
 from fastapi import APIRouter
-from backend import models
+from backend.db import db
 
 router = APIRouter()
 
+ref = db.collection('Users')
+
 @router.get("/")
-async def get_user(id: str):
-    return {"message": "User "}
+async def get_users():
+    # Get all users from the database
+    users = db.users.find()
+    return {"data": users}
+@router.get("/")
+async def get_one_user(userid: str):
+    # Get all users f
+
+    return {"message": "List of users"}
 
 @router.post("/")
 async def add_user(user: models.User):
