@@ -1,9 +1,13 @@
 from fastapi import APIRouter
+from backend.db import db
+from backend.classes import Ingredient
 
 router = APIRouter()
 
+ref = db.collection('Ingerdients')
+
 @router.get("/")
-async def get_recipes():
+async def get_ingredient():
     return {"message": "List of users"}
 
 @router.get("/")
@@ -11,13 +15,13 @@ async def get_one_recipe():
     return {"message": "List of users"}
 
 @router.post("/")
-async def add_recipe():
+async def add_ingredient():
     return {"message": "List of users"}
 
 @router.patch("/")
-async def update_recipe():
+async def update_ingredient():
     return {"message": "List of users"}
 
 @router.delete("/")
-async def delete_recipe():
+async def delete_ingredient():
     return {"message": "List of users"}
