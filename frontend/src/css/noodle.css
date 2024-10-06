@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Recipe container styling */
+.recipe-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe title styling */
+.recipe-title {
+    font-size: 36px;
+    text-align: center;
+    color: #f29321;
+    margin-bottom: 30px;
+}
+
+/* Recipe header for image and info (time) */
+.recipe-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Center both images */
+    gap: 50px; /* Add gap to control spacing between the images */
+    margin-bottom: 40px;
+}
+
+/* Styling the tofu image */
+.recipe-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+/* Time icon and details */
+.recipe-info {
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the time details */
+}
+
+.recipe-info img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.recipe-info p {
+    font-weight: bold;
+    text-align: center; /* Center align text */
+}
+
+/* Section titles like Ingredients, Instructions */
+h2 {
+    font-size: 28px;
+    color: #f29321;
+    border-bottom: 2px solid #f29321;
+    margin-bottom: 20px;
+}
+
+/* Ingredients list styling */
+.ingredients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.ingredients li {
+    list-style-type: circle;
+    color: #333;
+}
+
+/* Instructions list styling */
+.instructions {
+    font-size: 18px;
+    color: #333;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+.ingredient:hover {
+    cursor: pointer;
+    color: #f29321;
+    text-decoration: underline;
+}
+
+/* Hover modal styles */
+.ingredient:hover::after {
+    content: "Click to find alternatives";
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #333;
+}
