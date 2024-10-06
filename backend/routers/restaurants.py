@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from backend.db import db
+from backend.models import Recipe
 
 router = APIRouter()
 

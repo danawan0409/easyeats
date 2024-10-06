@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from backend.db import db
+from backend.models import User
 
 router = APIRouter()
 
@@ -17,7 +18,7 @@ async def get_one_user(userid: str):
     return {"message": "List of users"}
 
 @router.post("/")
-async def add_user(user: models.User):
+async def add_user(user: User):
     return {"message": "List of users"}
 
 @router.patch("/")
