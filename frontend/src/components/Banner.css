@@ -1,0 +1,42 @@
+.banner {
+  background-image: url('https://t4.ftcdn.net/jpg/03/32/75/39/360_F_332753934_tBacXEgxnVplFBRyKbCif49jh0Wz89ns.jpg');  /* Ensure this is the correct image URL */
+  background-size: cover;  /* Ensure the image covers the entire section */
+  background-position: center;  /* Center the image */
+  width: 100%;
+  height: 400px;  /* Adjust the height as necessary */
+  position: relative;  /* Make sure the content inside is positioned correctly */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;  /* White text */
+  text-align: center;
+}
+
+.banner-content h1 {
+  margin-bottom: 20px;  /* Add space between the header and the paragraph */
+}
+
+.banner-content p {
+  margin-bottom: 20px;  /* Add space between the paragraph and the button */
+  line-height: 1.5;  /* Adjust line height for more spacing */
+}
+
+.quiz-btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+.quiz-btn:hover {
+  background-color: #f1f1f1;
+}
